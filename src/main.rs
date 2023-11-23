@@ -12,7 +12,9 @@ struct Todo {
 
 #[derive(Serialize)]
 enum ResponseStatus {
+    #[serde(rename = "success")]
     Success,
+    #[serde(rename = "error")]
     Error,
 }
 
